@@ -2,11 +2,11 @@
 <Defs>
 
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>VAERoy_Crane</defName>
-		<label>crane</label>
+		<defName>VAERoy_Peacock</defName>
+		<label>peacock</label>
 		<description>todo\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; If you have at least 5 cranes under your control, any pawn with a nobility rank of any kind receives a +5 mood boost.</description>
 		<statBases>
-			<MoveSpeed>1.5</MoveSpeed>
+			<MoveSpeed>2</MoveSpeed>
 			<ComfyTemperatureMin>-20</ComfyTemperatureMin>			
 			<MarketValue>475</MarketValue>
 			<FilthRate>4</FilthRate>
