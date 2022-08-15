@@ -68,7 +68,7 @@
 			<nuzzleMtbHours>72</nuzzleMtbHours>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
-		
+			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<gestationPeriodDays>15</gestationPeriodDays>
 			<litterSizeCurve>
 				<points>

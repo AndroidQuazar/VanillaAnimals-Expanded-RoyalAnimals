@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+  <!-- Crane -->
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>VAERoy_EggCraneFertilized</defName>
+    <label>crane egg (fert.)</label>
+    <description>A fertilized crane egg. If all goes well, it should hatch into a baby crane. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(181,158,116)</color>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>11.0</MarketValue>
+    
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5</hatcherDaystoHatch>
+        <hatcherPawn>VAERoy_Crane</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <!-- Peacock -->
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>VAERoy_EggPeacockFertilized</defName>
+    <label>peacock egg (fert.)</label>
+    <description>A fertilized peacock egg. If all goes well, it should hatch into a peacock. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(243,237,237)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>6.5</hatcherDaystoHatch>
+        <hatcherPawn>VAERoy_Peacock</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <!-- Pheasant -->
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>VAERoy_EggPheasantFertilized</defName>
+    <label>pheasant egg (fert.)</label>
+    <description>A fertilized pheasant egg. If all goes well, it should hatch into a peacock. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+     
+	   <texPath>Things/Resource/PheasantEgg</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>VAERoy_Pheasant</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+ 
+  
+</Defs>

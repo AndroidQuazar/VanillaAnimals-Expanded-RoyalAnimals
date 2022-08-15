@@ -21,7 +21,8 @@
 			<baseHealthScale>1.5</baseHealthScale>
 			<baseHungerRate>0.225</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<wildness>0.75</wildness>			
+			<wildness>0.75</wildness>		
+			<herdMigrationAllowed>false</herdMigrationAllowed>			
 			<manhunterOnDamageChance>0.2</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<trainability>None</trainability>
@@ -55,7 +56,7 @@
 
 		</race>
 		<comps>
-			
+
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>VAERoy_EggCraneFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
@@ -123,20 +124,20 @@
 		</tools>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
-				
+
 				<statToAdd>
 					<li>VAERoy_PrimaryRole</li>
-								
+
 				</statToAdd>
 				<statValues>
 					<li>VAERoy_Utility</li>
-								
+
 				</statValues>
 				<statDescriptions>
 					<li>VAERoy_UtilityMoodDesc</li>
-					
+
 				</statDescriptions>
-					
+
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -149,7 +150,7 @@
 		<combatPower>75</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 
-		
+
 		<lifeStages>
 			<li>
 				<label>crane chick</label>
@@ -183,7 +184,7 @@
 					<texPath>Things/Pawn/Animal/Crane/Dessicated_Crane</texPath>
 					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
-				
+
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -206,7 +207,7 @@
 					<texPath>Things/Pawn/Animal/Crane/Dessicated_Crane</texPath>
 					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
-				
+
 			</li>
 		</lifeStages>
 
