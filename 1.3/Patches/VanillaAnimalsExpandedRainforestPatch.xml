@@ -17,6 +17,23 @@
 
 				</value>
 			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "VAERoy_RoyalTiger"]/race/useMeatFrom</xpath>
+				<value>
+					<useMeatFrom>AEXP_Tiger</useMeatFrom>
+					
+
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "VAERoy_RoyalTiger"]/race/useLeatherFrom</xpath>
+				<value>
+					<useLeatherFrom>AEXP_Tiger</useLeatherFrom>
+					
+
+				</value>
+			</li>
 
 			
 

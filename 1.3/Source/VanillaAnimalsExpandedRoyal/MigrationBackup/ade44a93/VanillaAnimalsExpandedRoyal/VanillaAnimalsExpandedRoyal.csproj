@@ -35,6 +35,9 @@
     <LangVersion>8</LangVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.2.2.2\lib\net472\0Harmony.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
@@ -47,7 +50,6 @@
     <Compile Include="AI\JobDrivers\JobDriver_Peacock.cs" />
     <Compile Include="AI\JobGivers\JobGiver_Peacock.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
-    <Compile Include="Harmony\GenRecipe_MakeRecipeProducts.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\Thing_ButcherProducts.cs" />
     <Compile Include="InteractionWorkers\InteractionWorker_Peacock.cs" />
@@ -58,12 +60,7 @@
     <Compile Include="ThoughtWorkers\ThoughtWorker_CraneThought.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.3.3389</Version>
-    </PackageReference>
-    <PackageReference Include="Lib.Harmony">
-      <Version>2.2.2</Version>
-    </PackageReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
