@@ -49,6 +49,7 @@
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Harmony\GenRecipe_MakeRecipeProducts.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
+    <Compile Include="Harmony\Graphic_Random_GetColoredVersion.cs" />
     <Compile Include="Harmony\Thing_ButcherProducts.cs" />
     <Compile Include="InteractionWorkers\InteractionWorker_Peacock.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_Cranes.cs" />

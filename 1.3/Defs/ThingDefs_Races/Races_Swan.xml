@@ -53,6 +53,15 @@
 				<eggLayIntervalDays>7</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_BuildPeriodically">
+				<defOfBuilding>VAERoy_SwanNest</defOfBuilding>
+				<ticksToBuild>3000</ticksToBuild>
+				<onlyOneExistingPerPawn>true</onlyOneExistingPerPawn>
+				<ifBedAssignOwnership>true</ifBedAssignOwnership>
+				<maxBuildingsPerMap>100</maxBuildingsPerMap>
+				<onlyTamed>true</onlyTamed>
+				<checkForExistingEdifices>true</checkForExistingEdifices>
+			</li>
 		</comps>
 		<race>
 			<body>Bird</body>
@@ -101,6 +110,25 @@
 			<li>AnimalExotic</li>
 			<li>AnimalImperial</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<statToAdd>
+					<li>VAERoy_PrimaryRole</li>
+
+				</statToAdd>
+				<statValues>
+					<li>VAERoy_Utility</li>
+
+				</statValues>
+				<statDescriptions>
+					<li>VAERoy_UtilityMoodDesc</li>
+
+				</statDescriptions>
+
+			</li>
+		</modExtensions>
+		
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>VAERoy_Swan</defName>
@@ -113,17 +141,17 @@
 				<label>cygnet</label>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Swan/SwanYoung</texPath>
-					<drawSize>0.75</drawSize>
+					<drawSize>0.9</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Swan/Dessicated_SwanYoung</texPath>
-					<drawSize>0.75</drawSize>
+					<drawSize>0.9</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Swan/Swan</texPath>
-					<drawSize>0.9</drawSize>
+					<drawSize>1.2</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
 						<offset>(0,0,-0.2)</offset>
@@ -132,14 +160,14 @@
 				
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Swan/DessicatedSwan</texPath>
-					<drawSize>0.9</drawSize>
+					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
 
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Swan/Swan</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>1.5</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
 						<offset>(0,0,-0.2)</offset>
@@ -148,7 +176,7 @@
 				
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Swan/DessicatedSwan</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 
 			</li>

@@ -73,4 +73,38 @@
 		</stages>
 	</HediffDef>
 	
+	<HediffDef>
+		<defName>VAERoy_AngoraRabbitBonded</defName>
+		<description>This angora rabbit has bonded with a colonist. It will provide a psychic connection to that colonist increasing psychic entropy recovery rate, but the rabbit will die if the bonded colonist dies.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>angora rabbit bonded</label>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+			<li>
+
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>VAERoy_AngoraRabbitBondedPawn</defName>
+		<description>Psychic connection with an angora rabbit that helps with neural heat dissipation.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>angora bond</label>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				
+				<statOffsets>
+					<PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>		
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
 </Defs>

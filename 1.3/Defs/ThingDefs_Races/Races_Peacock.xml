@@ -150,7 +150,7 @@
 		
 		<lifeStages>
 			<li>
-				<label>peacock chick</label>
+				<label>peachick</label>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Peacock/PeacockFemale</texPath>
 					<drawSize>1</drawSize>
