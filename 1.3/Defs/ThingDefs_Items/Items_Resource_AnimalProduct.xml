@@ -134,6 +134,29 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	<!-- Pheasant -->
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>VAERoy_EggMegaChickenFertilized</defName>
+		<label>megachicken egg (fert.)</label>
+		<description>A fertilized megachicken egg. If all goes well, it should hatch into a megachicken. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+
+			<texPath>Things/Resource/EggMegachicken</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>40</MarketValue>
+			<Nutrition>2</Nutrition>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>60</hatcherDaystoHatch>
+				<hatcherPawn>VAERoy_Megachicken</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 
 
 

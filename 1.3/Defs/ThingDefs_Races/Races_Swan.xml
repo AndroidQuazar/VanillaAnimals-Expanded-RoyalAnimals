@@ -136,6 +136,7 @@
 		<race>VAERoy_Swan</race>
 		<combatPower>40</combatPower>
 		<ecoSystemWeight>0.25</ecoSystemWeight>
+		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<label>cygnet</label>
