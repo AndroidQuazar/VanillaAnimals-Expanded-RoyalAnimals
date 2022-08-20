@@ -45,16 +45,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AI\JobDrivers\JobDriver_Peacock.cs" />
+    <Compile Include="AI\JobDrivers\JobDriver_Talk.cs" />
     <Compile Include="AI\JobGivers\JobGiver_Peacock.cs" />
+    <Compile Include="AI\JobGivers\JobGiver_Talk.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Harmony\GenRecipe_MakeRecipeProducts.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\Graphic_Random_GetColoredVersion.cs" />
     <Compile Include="Harmony\Thing_ButcherProducts.cs" />
+    <Compile Include="InteractionWorkers\InteractionWorker_AnimalSpeak.cs" />
     <Compile Include="InteractionWorkers\InteractionWorker_Peacock.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_Cranes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StaticCollectionsClass\StaticCollectionsClass.cs" />
+    <Compile Include="ThinkNodes\ThinkNode_Orangutan.cs" />
     <Compile Include="ThinkNodes\ThinkNode_Peacock.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_CraneThought.cs" />
   </ItemGroup>

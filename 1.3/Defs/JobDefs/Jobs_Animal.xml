@@ -9,6 +9,13 @@
 		<reportString>nuzzling TargetA.</reportString>
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
+	
+	<JobDef>
+		<defName>VAERoy_OrangutanTalk</defName>
+		<driverClass>VanillaAnimalsExpandedRoyal.JobDriver_Talk</driverClass>
+		<reportString>talking with TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
 
 	
 

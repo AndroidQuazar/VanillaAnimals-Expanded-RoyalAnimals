@@ -16,6 +16,7 @@ namespace VanillaAnimalsExpandedRoyal
 		public static ThingDef VAERoy_Crane;
 		public static ThingDef VAERoy_Peacock;
 		public static ThingDef VAERoy_Quail;
+		public static ThingDef VAERoy_Orangutan;
 
 		public static ThingDef VAERoy_QuailMeat;
 		public static ThingDef MealLavish;
@@ -25,8 +26,10 @@ namespace VanillaAnimalsExpandedRoyal
 		public static ThingDef MealLavish_Meat;
 
 		public static JobDef VAERoy_PeacockNuzzle;
+		public static JobDef VAERoy_OrangutanTalk;
 
 		public static InteractionDef VAERoy_PeacockInteraction;
+		public static InteractionDef VAERoy_OrangutanInteraction;
 
 		public static HediffDef VAERoy_PsychicSensitivity;
 
