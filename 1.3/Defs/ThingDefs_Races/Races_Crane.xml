@@ -10,6 +10,7 @@
 			<ComfyTemperatureMin>-20</ComfyTemperatureMin>			
 			<MarketValue>475</MarketValue>
 			<FilthRate>4</FilthRate>
+			<MeatAmount>96</MeatAmount>
 		</statBases>
 
 		<race>
