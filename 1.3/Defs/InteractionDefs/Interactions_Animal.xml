@@ -46,7 +46,7 @@
     <defName>VAERoy_OrangutanInteraction</defName>
     <label>tutoring</label>
     <workerClass>VanillaAnimalsExpandedRoyal.InteractionWorker_AnimalSpeak</workerClass>
-    <symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
+    <symbol>Things/Mote/TeachingIcon</symbol>
     <recipientThought>Chitchat</recipientThought>
     <logRulesInitiator>
       <rulesStrings>
@@ -63,30 +63,29 @@
         <li>talkedabout->quipped about</li>
 
         <li>commentedabout->said something about</li>
-        <li>commentedabout->stammered about</li>
         <li>commentedabout->made a comment about</li>
         <li>commentedabout->commented about</li>
         <li>commentedabout->mused about</li>
 		
-		<li>animalthings->the futility of the human condition</li>
-		<li>animalthings->rejecting humanity, returning to monkey</li>
-		<li>animalthings->an ancient movie where monkeys inherited the planet</li>
-		<li>animalthings->the transcendental aesthetic of the totality our faculties</li>
-		<li>animalthings->the never-ending regress in the series of empirical conditions</li>
-		<li>animalthings->how enlightenment is man's release from his self-incurred tutelage</li>
-		<li>animalthings->how language is the house of being</li>
-		<li>animalthings->existance being suffering</li>
-		<li>animalthings->the reasons for being created</li>
-		<li>animalthings->release from the constant suffering of life</li>
-		<li>animalthings->fucking magnets, how do they work?</li>
-		<li>animalthings->eating without a table, and the barbarism of Man</li>
-		<li>animalthings->what the deal is with Thrumbos, huh? Are they aliens, or what?</li>
-		<li>animalthings->bloat, as dumb, stupid animals are wont to do</li>
-		<li>animalthings->the necessity of a killbox to protect the colony</li>
-		<li>animalthings->the ethical concerns of human cloning</li>
-		<li>animalthings->all those anime mods. What are people thinking?</li>
-		<li>animalthings->the forbidden mod</li>
-		<li>animalthings->Bearofleets</li>
+		<li>animalthings->the comparison of paternalistic societies with other social aspects and matters</li>
+		<li>animalthings->the origin of or linguistic analysis of the term paragliding</li>
+		<li>animalthings->how other cultures or nations view hard work</li>
+		<li>animalthings->the personal and professional analysis and impact of mathematics</li>
+		<li>animalthings->poetry related to prepackaged snacks</li>
+		<li>animalthings->outdated opinions about ethnic violence</li>
+		<li>animalthings->a journalistic WHERE analysis of self-deportation immigration policy: where it happened - places, countries, or regions involved or affected</li>
+		<li>animalthings->countries with highest consumption of cauliflower</li>
+		<li>animalthings->expert opinions about sexual orientation</li>
+		<li>animalthings->what is unique about bread</li>
+		<li>animalthings->the ethics of laser eye surgery</li>
+		<li>animalthings->the religious, theological, spiritual, and moral analysis of decision making</li>
+		<li>animalthings->why phone tapping matters</li>
+		<li>animalthings->an embarrassing experience involving positive attitude</li>
+		<li>animalthings->a comparison of different types of cocktails</li>
+		<li>animalthings->the comparison of wearing your heart on your sleeve with other habits</li>
+		<li>animalthings->the best experts' opinions on inner city poverty in the world</li>
+		<li>animalthings->excerpts from books or articles related to glass etching</li>
+		<li>animalthings->the negative effects of preferential treatment</li>
 
       </rulesStrings>
     </logRulesInitiator>

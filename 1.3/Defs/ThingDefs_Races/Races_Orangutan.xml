@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	
+
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>VAERoy_Orangutan</defName>
 		<label>orangutan</label>
-		<description>todo\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; .</description>
+		<description>A great ape invented and patented on Sophiamunda, orangutans are intelligent and can hold a normal conversation with humans. They are often used as home teachers in the Empire, educating young nobles in history, arts and correct etiquette.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; When holding sophisticated conversations with humans, they boost their social recreation. Furthermore, each conversation with an orangutan gives a little bit of XP to a random skill.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<MarketValue>750</MarketValue>
@@ -92,7 +92,7 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.3333</minAge>
-				
+
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
@@ -105,20 +105,20 @@
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
-				
+
 				<statToAdd>
 					<li>VAERoy_PrimaryRole</li>
-								
+
 				</statToAdd>
 				<statValues>
-					<li>VAERoy_Utility</li>
-								
+					<li>VAERoy_UtilitySocial</li>
+
 				</statValues>
 				<statDescriptions>
 					<li>VAERoy_UtilitySocialDesc</li>
-					
+
 				</statDescriptions>
-					
+
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -126,7 +126,7 @@
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>VAERoy_Orangutan</defName>
 		<label>orangutan</label>
-		
+
 		<race>VAERoy_Orangutan</race>
 		<combatPower>135</combatPower>
 		<ecoSystemWeight>0.30</ecoSystemWeight>
@@ -137,7 +137,7 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Orangutan/Orangutan</texPath>
 					<drawSize>1.1</drawSize>
-					
+
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Orangutan/Dessicated_Orangutan</texPath>
@@ -176,7 +176,7 @@
 	</PawnKindDef>
 
 
-	
+
 
 
 </Defs>

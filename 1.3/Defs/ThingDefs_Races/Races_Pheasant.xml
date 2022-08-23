@@ -4,13 +4,13 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>VAERoy_Pheasant</defName>
 		<label>pheasant</label>
-		<description>todo\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;</description>
+		<description>Small, noble poultry that was genetically engineered to be an excellent small game animal. When pheasants run away from danger, they emit a psychic invisibility blast, making their allies hidden from sight.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Whenever a pheasant is in danger (it starts fleeing), it emits a psychic shockwave in radius of 6 cells around itself. It only does it once every 24 hours. This shockwave gives all pawns under player control in that radius Psychic Invisibility for a short period of time, making them untargetable by enemies.</description>
 		<statBases>
 			<MoveSpeed>2.1</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>			
 			<MarketValue>75</MarketValue>
 			<FilthRate>4</FilthRate>
-			 <LeatherAmount>0</LeatherAmount>
+			<LeatherAmount>0</LeatherAmount>
 		</statBases>
 
 		<race>
@@ -57,13 +57,20 @@
 
 		</race>
 		<comps>
-			
+
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>VAERoy_EggPheasantFertilized</eggFertilizedDef>
-				 <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>7</eggLayIntervalDays>
-        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-        <eggCountRange>1~1</eggCountRange>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>7</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~1</eggCountRange>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_HediffWhenFleeing">
+				<tickInterval>60</tickInterval>
+				<hediffToCause>VAERoy_PsychicInvisibility</hediffToCause>
+				<graphicAndSoundEffect>true</graphicAndSoundEffect>
+				<hediffOnRadius>true</hediffOnRadius>
+				<radius>6</radius>
 			</li>
 
 		</comps>
@@ -74,52 +81,55 @@
 		</tradeTags>
 
 		<tools>
-			 <li>
-        <label>claws</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>3</power>
-        <cooldownTime>1.5</cooldownTime>
-        <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
-      </li>
-      <li>
-        <label>beak</label>
-        <capacities>
-          <li>Bite</li>
-        </capacities>
-        <power>4</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
-      </li>
-      <li>
-        <label>head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>2</power>
-        <cooldownTime>1.5</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
-      </li>
+			<li>
+				<label>claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>beak</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
 		</tools>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
-				
+
 				<statToAdd>
 					<li>VAERoy_PrimaryRole</li>
-								
+					<li>VAERoy_SecondaryRole</li>	
+
 				</statToAdd>
 				<statValues>
-					<li>VAERoy_Utility</li>
-								
+					<li>VAERoy_UtilityCrowd</li>
+					<li>VAERoy_EggLayer</li>		
+
 				</statValues>
 				<statDescriptions>
-					<li>VAERoy_UtilityMoodDesc</li>
-					
+					<li>VAERoy_UtilityCrowdDesc</li>
+					<li>VAERoy_EggLayerDesc</li>		
+
 				</statDescriptions>
-					
+
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -132,7 +142,7 @@
 		<combatPower>30</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 
-		
+
 		<lifeStages>
 			<li>
 				<label>pheasant chick</label>
@@ -166,7 +176,7 @@
 					<texPath>Things/Pawn/Animal/Pheasant/Dessicated_PheasantMale</texPath>
 					<drawSize>1.3</drawSize>
 				</dessicatedBodyGraphicData>
-				
+
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -189,7 +199,7 @@
 					<texPath>Things/Pawn/Animal/Pheasant/Dessicated_PheasantMale</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
-				
+
 			</li>
 		</lifeStages>
 

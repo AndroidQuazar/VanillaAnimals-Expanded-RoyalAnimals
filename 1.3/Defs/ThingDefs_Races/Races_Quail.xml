@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>VAERoy_Quail</defName>
 		<label>quail</label>
-		<description>todo\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;</description>
+		<description>Royal poultry bred specifically for human consumption, quail meat is one of a kind, with a taste so succulent it turns any meal into a lavish meal.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Their extremely tasty meat instantly turns any simple or fine meal it’s used in into a lavish meal.</description>
 		<statBases>
 			<MoveSpeed>2.1</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>			
@@ -57,23 +57,23 @@
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-			
+
 
 
 
 		</race>
 		<butcherProducts>
-				<VAERoy_QuailMeat>2</VAERoy_QuailMeat>
-			</butcherProducts>
+			<VAERoy_QuailMeat>2</VAERoy_QuailMeat>
+		</butcherProducts>
 		<comps>
 
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>VAERoy_EggQuailFertilized</eggFertilizedDef>
 				<eggUnfertilizedDef>VAERoy_EggQuailUnfertilized</eggUnfertilizedDef>
-				
+
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>4</eggLayIntervalDays>
-				
+
 				<eggCountRange>1~1</eggCountRange>
 			</li>
 
@@ -120,15 +120,16 @@
 
 				<statToAdd>
 					<li>VAERoy_PrimaryRole</li>
-
+					<li>VAERoy_SecondaryRole</li>	
 				</statToAdd>
 				<statValues>
-					<li>VAERoy_Utility</li>
+					<li>VAERoy_UtilityFood</li>
+					<li>VAERoy_EggLayer</li>		
 
 				</statValues>
 				<statDescriptions>
-					<li>VAERoy_UtilityMoodDesc</li>
-
+					<li>VAERoy_UtilityFoodDesc</li>
+					<li>VAERoy_EggLayerDesc</li>		
 				</statDescriptions>
 
 			</li>

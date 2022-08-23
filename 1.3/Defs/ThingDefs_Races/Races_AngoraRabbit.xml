@@ -5,7 +5,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>VAERoy_AngoraRabbit</defName>
 		<label>angora rabbit</label>
-		<description>todo\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;</description>
+		<description>Small, domestic rabbit that has developed an ability to enhance the neural heat dissipation of anyone they bond with. Unfortunately, as a side effect, it the bonded master of the angora rabbit dies, the rabbit will also die of sadness and loss.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; As long as an Angora Rabbit is bonded to a colonist, this colonist will receive a psychic connection that helps with neural heat dissipation.</description>
 
 		<statBases>
 			<MoveSpeed>6.0</MoveSpeed>
@@ -40,7 +40,7 @@
 				<hediffToApplyToBonded>VAERoy_AngoraRabbitBondedPawn</hediffToApplyToBonded>
 				<doJobIfBondedDies>false</doJobIfBondedDies>
 				<dieIfBondedDies>true</dieIfBondedDies>
-				
+
 			</li>
 		</comps>
 
@@ -101,11 +101,11 @@
 
 				</statToAdd>
 				<statValues>
-					<li>VAERoy_Utility</li>
+					<li>VAERoy_UtilityHeat</li>
 
 				</statValues>
 				<statDescriptions>
-					<li>VAERoy_UtilityMoodDesc</li>
+					<li>VAERoy_UtilityHeatDisipationDesc</li>
 
 				</statDescriptions>
 
@@ -125,7 +125,7 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/AngoraRabbit/AngoraRabbit</texPath>
 					<drawSize>1</drawSize>
-					
+
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/AngoraRabbit/Dessicated_AngoraRabbit</texPath>
@@ -136,7 +136,7 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/AngoraRabbit/AngoraRabbit</texPath>
 					<drawSize>1.25</drawSize>
-					
+
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/AngoraRabbit/Dessicated_AngoraRabbit</texPath>
@@ -147,7 +147,7 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/AngoraRabbit/AngoraRabbit</texPath>
 					<drawSize>1.5</drawSize>
-					
+
 					<shadowData>
 						<volume>(0.32, 0.35, 0.32)</volume>
 						<offset>(0,0,0)</offset>

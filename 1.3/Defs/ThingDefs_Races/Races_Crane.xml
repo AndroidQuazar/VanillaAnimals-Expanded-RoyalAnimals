@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>VAERoy_Crane</defName>
 		<label>crane</label>
-		<description>todo\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; If you have at least 5 cranes under your control, any pawn with a nobility rank of any kind receives a +5 mood boost.</description>
+		<description>A large, long legged bird species, cranes are a symbol of royalty and nobility and often populate royal gardens. It is believed that people of imperial rank will appreciate having plenty of cranes around them.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; If you have at least 5 cranes under your control, any pawn with a nobility rank of any kind receives a +5 mood boost.</description>
 		<statBases>
 			<MoveSpeed>1.5</MoveSpeed>
 			<ComfyTemperatureMin>-20</ComfyTemperatureMin>			
@@ -127,15 +127,15 @@
 
 				<statToAdd>
 					<li>VAERoy_PrimaryRole</li>
-
+					<li>VAERoy_SecondaryRole</li>
 				</statToAdd>
 				<statValues>
-					<li>VAERoy_Utility</li>
-
+					<li>VAERoy_UtilityMood</li>
+					<li>VAERoy_EggLayer</li>
 				</statValues>
 				<statDescriptions>
 					<li>VAERoy_UtilityMoodDesc</li>
-
+					<li>VAERoy_EggLayerDesc</li>
 				</statDescriptions>
 
 			</li>
@@ -156,17 +156,17 @@
 				<label>crane chick</label>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Crane/CraneFemale</texPath>
-					<drawSize>1.5</drawSize>
+					<drawSize>1.1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Crane/Dessicated_Crane</texPath>
-					<drawSize>1.5</drawSize>
+					<drawSize>1.1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Crane/CraneMale</texPath>
-					<drawSize>1.8</drawSize>
+					<drawSize>1.3</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
 						<offset>(0,0,-0.2)</offset>
@@ -174,7 +174,7 @@
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/Crane/CraneFemale</texPath>
-					<drawSize>1.8</drawSize>
+					<drawSize>1.3</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
 						<offset>(0,0,-0.2)</offset>
@@ -182,14 +182,14 @@
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Crane/Dessicated_Crane</texPath>
-					<drawSize>1.8</drawSize>
+					<drawSize>1.3</drawSize>
 				</dessicatedBodyGraphicData>
 
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Crane/CraneMale</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1.5</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
 						<offset>(0,0,-0.2)</offset>
@@ -197,7 +197,7 @@
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/Crane/CraneFemale</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1.5</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
 						<offset>(0,0,-0.2)</offset>
@@ -205,7 +205,7 @@
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Crane/Dessicated_Crane</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 
 			</li>

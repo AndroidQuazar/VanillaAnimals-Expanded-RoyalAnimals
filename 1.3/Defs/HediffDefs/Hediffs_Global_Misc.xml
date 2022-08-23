@@ -72,7 +72,7 @@
 			</li>
 		</stages>
 	</HediffDef>
-	
+
 	<HediffDef>
 		<defName>VAERoy_AngoraRabbitBonded</defName>
 		<description>This angora rabbit has bonded with a colonist. It will provide a psychic connection to that colonist increasing psychic entropy recovery rate, but the rabbit will die if the bonded colonist dies.</description>
@@ -87,7 +87,7 @@
 			</li>
 		</stages>
 	</HediffDef>
-	
+
 	<HediffDef>
 		<defName>VAERoy_AngoraRabbitBondedPawn</defName>
 		<description>Psychic connection with an angora rabbit that helps with neural heat dissipation.</description>
@@ -99,12 +99,32 @@
 		<stages>
 			<li>
 				<minSeverity>0</minSeverity>
-				
+
 				<statOffsets>
 					<PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>		
 				</statOffsets>
 			</li>
 		</stages>
 	</HediffDef>
-	
+
+	<HediffDef>
+		<defName>VAERoy_PsychicInvisibility</defName>
+		<label>psychic invisibility</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>Psychically-induced invisibility. This actually affects others nearby, making their brains unable to perceive the sight of this individual, even if the eyes are unaffected.</description>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties">
+				<compClass>HediffComp_Invisibility</compClass>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>2000~3000</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+
+
+
 </Defs>

@@ -6,7 +6,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>VAERoy_RoyalTiger</defName>
 		<label>royal tiger</label>
-		<description>todo\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;</description>
+		<description>A large, genetically engineered sabretooth tiger that evolved in captivity. Nobility often buys them for their spoiled children, as in reality, royal tiger is not dangerous at all, and prefers fleeing at the first sight of danger.</description>
 		<statBases>
 			<MoveSpeed>5.0</MoveSpeed>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
@@ -81,16 +81,16 @@
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<predator>true</predator>
+			<predator>true</predator>			
 			<baseHungerRate>0.3</baseHungerRate>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<wildness>0.65</wildness>
 			<trainability>Advanced</trainability>
-			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.0</manhunterOnDamageChance>
 			<gestationPeriodDays>10</gestationPeriodDays>
 			<maxPreyBodySize>2.0</maxPreyBodySize>
-			<baseBodySize>1.8</baseBodySize>
+			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>1.75</baseHealthScale>     
 			<lifeExpectancy>25</lifeExpectancy>   
 			<useMeatFrom>Cougar</useMeatFrom>
@@ -129,11 +129,11 @@
 
 				</statToAdd>
 				<statValues>
-					<li>VAERoy_Utility</li>
+					<li>VAERoy_Combat</li>
 
 				</statValues>
 				<statDescriptions>
-					<li>VAERoy_UtilityMoodDesc</li>
+					<li>VAERoy_CombatDesc</li>
 
 				</statDescriptions>
 

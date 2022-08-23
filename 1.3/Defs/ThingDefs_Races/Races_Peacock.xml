@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>VAERoy_Peacock</defName>
 		<label>peacock</label>
-		<description>todo\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; .</description>
+		<description>Beautiful, majestic royal birds genetically altered to be able to bestow psychic energy onto people they nuzzle.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Peacocks will periodically nuzzle your colonists. This increases Psychic Sensitivity of the nuzzled person by 25% for 12 hours. This stacks up to 8 times, resulting in +200% Psychic sensitivity if nuzzled by 8 peacocks.</description>
 		<statBases>
 			<MoveSpeed>2</MoveSpeed>
 			<ComfyTemperatureMin>-20</ComfyTemperatureMin>			
@@ -56,13 +56,13 @@
 
 		</race>
 		<comps>
-			
+
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>VAERoy_EggPeacockFertilized</eggFertilizedDef>
-				 <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>1.333</eggLayIntervalDays>
-        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-        <eggCountRange>1~1</eggCountRange>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>1.333</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~1</eggCountRange>
 			</li>
 
 		</comps>
@@ -121,20 +121,20 @@
 		</tools>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
-				
+
 				<statToAdd>
 					<li>VAERoy_PrimaryRole</li>
-								
+					<li>VAERoy_SecondaryRole</li>	
 				</statToAdd>
 				<statValues>
-					<li>VAERoy_Utility</li>
-								
+					<li>VAERoy_UtilityPsychic</li>
+					<li>VAERoy_EggLayer</li>		
 				</statValues>
 				<statDescriptions>
-					<li>VAERoy_UtilityMoodDesc</li>
-					
+					<li>VAERoy_UtilityPsychicDesc</li>
+					<li>VAERoy_EggLayerDesc</li>
 				</statDescriptions>
-					
+
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -147,7 +147,7 @@
 		<combatPower>52</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 
-		
+
 		<lifeStages>
 			<li>
 				<label>peachick</label>
@@ -181,7 +181,7 @@
 					<texPath>Things/Pawn/Animal/Peacock/Dessicated_Peacock</texPath>
 					<drawSize>1.3</drawSize>
 				</dessicatedBodyGraphicData>
-				
+
 			</li>
 			<li>
 				<bodyGraphicData>
@@ -204,7 +204,7 @@
 					<texPath>Things/Pawn/Animal/Peacock/Dessicated_Peacock</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
-				
+
 			</li>
 		</lifeStages>
 
