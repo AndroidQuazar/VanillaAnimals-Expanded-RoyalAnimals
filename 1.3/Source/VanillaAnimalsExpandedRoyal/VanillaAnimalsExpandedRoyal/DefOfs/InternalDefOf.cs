@@ -33,6 +33,8 @@ namespace VanillaAnimalsExpandedRoyal
 
 		public static HediffDef VAERoy_PsychicSensitivity;
 
+		public static PawnRelationDef VAERoy_TutorRelation;
+
 
 	}
 }
