@@ -80,7 +80,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>5.0</MarketValue>
-			<Nutrition>0.025</Nutrition>
+			<Nutrition>0.125</Nutrition>
 		</statBases>
 	</ThingDef>
 
@@ -95,7 +95,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>5.0</MarketValue>
-			<Nutrition>0.025</Nutrition>
+			<Nutrition>0.125</Nutrition>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
