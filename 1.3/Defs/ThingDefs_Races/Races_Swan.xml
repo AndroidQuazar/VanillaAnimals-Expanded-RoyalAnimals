@@ -67,7 +67,7 @@
 			<body>Bird</body>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<baseHungerRate>0.35</baseHungerRate>
-			<baseBodySize>0.30</baseBodySize>
+			<baseBodySize>0.6</baseBodySize>
 			<baseHealthScale>0.80</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<leatherDef>Leather_Bird</leatherDef>
