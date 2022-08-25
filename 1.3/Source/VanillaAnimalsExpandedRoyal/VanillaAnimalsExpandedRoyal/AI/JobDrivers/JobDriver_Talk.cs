@@ -31,8 +31,17 @@ namespace VanillaAnimalsExpandedRoyal
 
                 
                 pawn.interactions.TryInteractWith(recipient, InternalDefOf.VAERoy_OrangutanInteraction);
-                pawn.relations.AddDirectRelation(InternalDefOf.VAERoy_TutorRelation, recipient);
-                recipient.relations.AddDirectRelation(InternalDefOf.VAERoy_TutorRelation, pawn);
+                if(!pawn.relations.DirectRelationExists(InternalDefOf.VAERoy_TutorRelation, recipient))
+                {
+                    pawn.relations.AddDirectRelation(InternalDefOf.VAERoy_TutorRelation, recipient);
+                }
+
+                if (!recipient.relations.DirectRelationExists(InternalDefOf.VAERoy_TutorRelation, pawn))
+                {
+                    recipient.relations.AddDirectRelation(InternalDefOf.VAERoy_TutorRelation, pawn);
+                }
+
+                
                 SkillDef skillDef = DefDatabase<SkillDef>.AllDefs.Where((SkillDef x) => !recipient.skills.GetSkill(x).TotallyDisabled).RandomElement();
                 int level = recipient.skills.GetSkill(skillDef).Level;
                 IntRange skillGain = new IntRange(160, 240);

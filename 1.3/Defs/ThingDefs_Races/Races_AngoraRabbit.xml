@@ -54,7 +54,7 @@
 			<useLeatherFrom>Hare</useLeatherFrom>
 			<useMeatFrom>Hare</useMeatFrom>
 			<wildness>0.6</wildness>
-			<trainability>None</trainability>
+			<trainability>Intermediate</trainability>
 			<petness>0.08</petness>
 			<mateMtbHours>8</mateMtbHours>
 			<gestationPeriodDays>5.661</gestationPeriodDays>

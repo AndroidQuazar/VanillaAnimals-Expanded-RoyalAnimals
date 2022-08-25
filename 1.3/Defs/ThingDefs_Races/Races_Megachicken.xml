@@ -8,7 +8,7 @@
 
 		<description>The unusual royal farm bird, the megachicken is raised by spoiled royalty as a pet project. This bird simply never stops growing, and if taken care of, it can reach gargantuan sizes. Royalty is known to compare their megacocks, and usually the one with the biggest specimen wins. Those that lose often argue that it’s not about the size, it’s about what you do with it.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Megachicken have five growth stages, at 0, 3, 8, 12 and 18 years of age. Their abilities get increasingly powerful as they age.</description>
 		<statBases>
-			<MoveSpeed>2.1</MoveSpeed>
+			<MoveSpeed>5</MoveSpeed>
 			<MarketValue>650</MarketValue>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<FilthRate>4</FilthRate>
