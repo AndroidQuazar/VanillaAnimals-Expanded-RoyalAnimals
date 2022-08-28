@@ -54,7 +54,7 @@ namespace VanillaAnimalsExpandedRoyal
 
                 if (map.IsPlayerHome)
                 {
-                   
+                    ownedCranesInMap_backup = 0;
                     List<Thing> cranesInMap = map.listerThings.ThingsOfDef(InternalDefOf.VAERoy_Crane);
 
                     foreach (Thing crane in cranesInMap)
