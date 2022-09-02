@@ -18,6 +18,17 @@ namespace VanillaAnimalsExpandedRoyal
 
         public static int ownedCranesInMap = 0;
 
-       
+        public static List<ThingDef> allowedMeals = new List<ThingDef>() { InternalDefOf.MealSimple, InternalDefOf.MealFine, InternalDefOf.MealFine_Meat };
+
+        public static void AddMealToList(ThingDef thing)
+        {
+
+            if (!allowedMeals.Contains(thing))
+            {
+                allowedMeals.Add(thing);
+            }
+        }
+
+
     }
 }

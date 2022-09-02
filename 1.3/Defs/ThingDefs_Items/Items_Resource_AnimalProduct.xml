@@ -135,7 +135,7 @@
 		</comps>
 	</ThingDef>
 	
-	<!-- Pheasant -->
+	<!-- Megachicken -->
 
 	<ThingDef ParentName="EggFertBase">
 		<defName>VAERoy_EggMegaChickenFertilized</defName>

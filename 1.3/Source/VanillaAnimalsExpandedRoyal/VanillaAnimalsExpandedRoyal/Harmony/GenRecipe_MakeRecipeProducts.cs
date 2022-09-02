@@ -20,27 +20,42 @@ namespace VanillaAnimalsExpandedRoyal
 
     public static class VanillaAnimalsExpandedRoyal_GenRecipe_MakeRecipeProducts_Patch
     {
-        static List<ThingDef> allowedMeals = new List<ThingDef>() { InternalDefOf.MealSimple,InternalDefOf.MealFine,InternalDefOf.MealFine_Meat };
-
+        
         public static IEnumerable<Thing> Postfix(IEnumerable<Thing> values, RecipeDef recipeDef)
         {
             List<Thing> resultingList = values.ToList();
             if (recipeDef.products != null)
             {
+
+                if (ModLister.HasActiveModWithName("Vanilla Cooking Expanded"))
+                {
+                    StaticCollectionsClass.AddMealToList(ThingDef.Named("VCE_FineBake"));
+                    StaticCollectionsClass.AddMealToList(ThingDef.Named("VCE_SimpleGrill"));
+                    StaticCollectionsClass.AddMealToList(ThingDef.Named("VCE_FineGrill"));
+                }
                 foreach (Thing thing in resultingList)
                 {
-                    if (allowedMeals.Contains(thing.def))
+                    if (StaticCollectionsClass.allowedMeals.Contains(thing.def))
                     {
                         CompIngredients compIngredients = thing.TryGetComp<CompIngredients>();
                         if (compIngredients != null)
                         {
                             if (compIngredients.ingredients.Contains(InternalDefOf.VAERoy_QuailMeat))
                             {
-                                if(thing.def!= InternalDefOf.MealFine_Meat)
+                                if(thing.def== InternalDefOf.MealFine_Meat)
                                 {
-                                    thing.def = InternalDefOf.MealLavish;
+                                    thing.def = InternalDefOf.MealLavish_Meat;
+                                } else
+                                if (thing.def.defName == "VCE_FineBake")
+                                {
+                                    thing.def = ThingDef.Named("VCE_LavishBake");
                                 }
-                                else thing.def = InternalDefOf.MealLavish_Meat;
+                                else
+                                if (thing.def.defName == "VCE_SimpleGrill" || thing.def.defName == "VCE_FineGrill")
+                                {
+                                    thing.def = ThingDef.Named("VCE_LavishGrill");
+                                }
+                                else thing.def = InternalDefOf.MealLavish;
 
                             }
                         }

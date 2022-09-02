@@ -31,7 +31,7 @@
 	<ThingDef ParentName="VAERoy_RawMeatBase">
 		<defName>VAERoy_QuailMeat</defName>
 		<label>royal poultry</label>
-		<description>Raw meat from a quail, extremely tasty. Instantly turns any simple or fine meal it’s used in into a lavish meal.</description>
+		<description>Raw meat from a quail, extremely tasty. Instantly turns any simple or fine meal it’s used in into a lavish meal. It will also turn grills and bakes from Vanilla Cooking expanded into their lavish variations.</description>
 		<graphicData>
 			<texPath>Things/Resource/FinePoultry</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>

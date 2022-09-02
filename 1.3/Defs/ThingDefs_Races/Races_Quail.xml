@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>VAERoy_Quail</defName>
 		<label>quail</label>
-		<description>Royal poultry bred specifically for human consumption, quail meat is one of a kind, with a taste so succulent it turns any meal into a lavish meal.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Their extremely tasty meat instantly turns any simple or fine meal it’s used in into a lavish meal.</description>
+		<description>Royal poultry bred specifically for human consumption, quail meat is one of a kind, with a taste so succulent it turns any meal into a lavish meal.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Their extremely tasty meat instantly turns any simple or fine meal it’s used in into a lavish meal. It will also turn grills and bakes from Vanilla Cooking expanded into their lavish variations.</description>
 		<statBases>
 			<MoveSpeed>2.1</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>			
